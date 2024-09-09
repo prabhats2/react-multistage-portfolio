@@ -1,38 +1,141 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Crimson Pro', serif;
+}
+
+/* NAVIGATION */
+.navbarBrand{
+  font-size: 2.2rem !important;
+  font-weight: 700;
+  color: #fff !important;
+  z-index: 2;
+}
+.navbarnav{
+  margin-left: 42%;
+  width: 100%;
+}
+.nav-item{
+  margin-left: 15px;
+  z-index: 2;
+}
+.nav-item a{
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+/* HOMEPAGE */
+.HomepageSection{
+  background-image: url('./images/bg.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat ;
+  height: 100vh;
+  position: relative;
+}
+.HomepageSection::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.slider{
+  width: 1000px;
+  margin: 18% auto;
+}
+.slides{
   text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+.slides h1{
+  font-size: 6rem;
+  text-transform: uppercase;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* AboutSection */
+.AboutSection{
+  padding: 130px;
+}
+.about{
+  padding: 20px;
+}
+.about h1{
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+}
+.about p{
+  margin-top: 20px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+.about a{
+  color: #000;
+  font-size: 1.4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* WhatSection */
+.WhatSection{
+  padding: 120px;
+  background: #F5F5F5;
+}
+.inWhat{
+  margin-top: 60px;
+}
+.What{
+  padding-top: 20px;
+}
+.What p{
+  text-align: justify;
+  letter-spacing: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* ExperinceSection */
+.ResumeSection{
+  padding: 120px;
+}
+.Experince{
+  margin-top: 60px;
+}
+.Experince span{
+  position: relative;
+  top: -8px;
+  color: #959697;
+}
+.Experince ul li{
+  text-align: justify;
+  padding-bottom: 10px;
+}
+.mb{
+  margin-bottom: 20px;
+}
+.progress{
+  margin-top: 10px !important;
+}
+.progress-bar{
+  background: #000 !important;
 }
 
-.App-link {
-  color: #61dafb;
+/* ContactSection */
+.ContactSection{
+  padding: 120px;
+}
+.Form{
+  margin-top: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* FooterSection */
+.FooterSection{
+  padding: 50px;
+  text-align: center;
+  background: #F5F5F5;
 }
